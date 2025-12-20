@@ -44,7 +44,7 @@ export default function Contact() {
       </h2>
 
       <div>
-        <label className="block text-sm mb-1">Name *</label>
+        <label className="block text-sm mb-1" required>Name *</label>
         <input
           name="name"
           value={form.name}
@@ -55,7 +55,7 @@ export default function Contact() {
       </div>
 
       <div>
-        <label className="block text-sm mb-1">Email *</label>
+        <label className="block text-sm mb-1" required>Email *</label>
         <input
           name="email"
           type="email"
@@ -67,7 +67,7 @@ export default function Contact() {
       </div>
 
       <div>
-        <label className="block text-sm mb-1">Message *</label>
+        <label className="block text-sm mb-1" required>Message *</label>
         <textarea
           name="message"
           rows="4"

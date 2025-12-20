@@ -7,7 +7,7 @@ export default function Sidebar() {
         className="w-35 h-35 object-cover mb-4 rounded-2xl" 
       />
       <h2 className="text-2xl font-bold mb-1">Amisha Patel</h2>
-      <p className="text-xl text-gray-400 mb-4">Front-end Developer</p>
+      <p className="text-xl text-black mb-4">Front-End Developer</p>
 
       {/* Social */}
       <div className="flex gap-4 mb-4 text-xl text-gray-700">
@@ -41,13 +41,13 @@ export default function Sidebar() {
         </div>
       </div>
 
-      /* Contact Box */
+      {/* Contact Box */}
       <div className="bg-gray-200 rounded-xl p-4 w-full text-left space-y-2 text-sm shadow-md">
         <p className="flex items-center gap-2">
           <i className="bx bx-envelope"></i> amishaatel@gmail.com
         </p><hr className="my-1 border-t border-gray-400" />
         <p className="flex items-center gap-2">
-          <i className="bx bx-phone"></i> +91 7898763132
+          <i className="bx bx-phone"></i> +91 7898763111
         </p><hr className="my-1 border-t border-gray-400" />
         <p className="flex items-center gap-2">
           <i className="bx bx-map"></i> Rewa, MP
@@ -58,7 +58,7 @@ export default function Sidebar() {
       </div>
 
       <a
-        href="/downloads/amisha_Patel_Resume.pdf"
+        href="/downloads/Amisha Patel MCA2024-26.pdf"
         download
         className="mt-6 bg-gradient-to-r from-blue-500 to-purple-500 text-white px-6 py-2 rounded-full flex items-center gap-2 hover:shadow-lg"
       >
