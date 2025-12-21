@@ -47,42 +47,43 @@ export default function About() {
                   Front-end Developer Intern
                 </p>
                 <p className="text-sm text-black max-w-xl">
-                  Built responsive user interfaces using HTML and CSS, worked on
-                  real-world projects, and gained professional development
-                  experience.
+                  Worked on responsive UI development and real-world projects.
                 </p>
               </div>
             </div>
 
             <span className="text-sm text-black whitespace-nowrap">
-              2023 – 2024
+              Oct 2023 
             </span>
           </div>
 
           <div className="flex items-start justify-between gap-6">
             <div className="flex gap-4">
               <img
-                src="./icons/cyber_club.jpg"
-                alt="Cyber Club"
+                src="./icons/logo.png"
+                alt="Shas Foundation"
                 className="w-12 h-12 rounded-full"
               />
 
               <div>
                 <h3 className="text-lg font-semibold">
-                  Cyber Club – Department of Computer Applications
+                  SHAS Foundation || NGO
                 </h3>
-                <p className="text-sm text-black mb-2">Secretary (BCA)</p>
+                <p className="text-sm text-black mb-2">
+                  Graphic Designer Intern
+                </p>
                 <p className="text-sm text-black max-w-xl">
-                  Led and organized technical events, improving communication,
-                  leadership, and team management skills.
+                   Designed social media creatives and branding assets.
                 </p>
               </div>
             </div>
 
             <span className="text-sm text-black whitespace-nowrap">
-              2021 – 2024
+              Nov 2021
             </span>
           </div>
+
+          
         </div>
       </div>
     </section>
