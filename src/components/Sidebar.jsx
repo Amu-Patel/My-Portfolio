@@ -12,7 +12,7 @@ export default function Sidebar() {
       {/* Contact Box */}
       <div className="bg-gray-200 rounded-xl p-4 w-full text-left space-y-2 text-sm shadow-md">
         <p className="flex items-center gap-2">
-          <i className="bx bx-envelope"></i> amishaatel@gmail.com
+          <i className="bx bx-envelope"></i> amishaatel549@gmail.com
         </p><hr className="my-1 border-t border-gray-400" />
         <p className="flex items-center gap-2">
           <i className="bx bx-phone"></i> +91 7317247929

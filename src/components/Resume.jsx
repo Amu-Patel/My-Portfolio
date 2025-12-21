@@ -39,6 +39,7 @@ export default function Resume() {
                 2024 – 2026
               </span>
             </div>
+            <hr />
 
             <div className="flex justify-between gap-4">
               <img
@@ -59,6 +60,7 @@ export default function Resume() {
                 2021 – 2024
               </span>
             </div>
+            <hr />
           </div>
         </div>
 
@@ -85,17 +87,33 @@ export default function Resume() {
                 </h3>
                 <p className="text-sm text-black mb-2 text-nowrap">Department of Computer Applications (BCA)</p>
                 <p className="text-sm text-black max-w-xl">
-                  Led and organized technical events, improving communication,
-                  leadership, and team management skills.
+                  Led and organized technical events.
                 </p>
-              </div>
-              <span className="text-sm text-black whitespace-nowrap">
-              2021 – 2024
-            </span>
+                <span className="text-sm text-black whitespace-nowrap">
+                  2021 – 2024
+                </span>
+              </div>             
             </div>
+            </div>
+            <div className="flex gap-4">
+              <img
+                src="./icons/3.jpg"
+                alt="idea pitching"
+                className="w-12 h-12 rounded-full"
+              />
 
-            
-          </div>
+              <div>
+                <h3 className="text-lg font-semibold text-nowrap">
+                  3rd Prize - Idea Pitching Competition
+                </h3>
+                <p className="text-sm text-black mb-2 text-nowrap">Department of Computer Applications (BCA)</p>
+                <p className="text-sm text-black max-w-xl">
+                  Innovation, Creativity, Planning and Implementaion
+                </p>
+                <span className="text-sm text-black whitespace-nowrap">2021 – 2024</span>
+              </div>
+              
+            </div>
           </div>
         </div>
       </div>
