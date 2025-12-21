@@ -11,7 +11,7 @@ export default function App() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   return (
-    <div className="min-h-screen flex flex-col md:flex-row bg-gradient-to-br from-blue-500 to-purple-300 p-4 md:p-6">
+    <div className="min-h-screen flex flex-col md:flex-row bg-black p-4 md:p-6">
 
       
       <aside className="hidden md:block w-fit">

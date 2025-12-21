@@ -1,71 +1,87 @@
 export default function About() {
   return (
     <section id="about" className="py-12 px-4 overflow-x-hidden">
+      {/* ABOUT */}
       <div>
         <h2 className="text-3xl font-bold mb-6 border-b-4 border-blue-500 inline-block">
-        About
+          About
         </h2>
+
         <p className="text-base mb-4">
-          I am a Front-end Developer and Data Analyst from Rewa, Madhya Pradesh. I specialize in turning complex problems into
-          simple, beautiful, and intuitive designs. With a passion for both coding and data analysis, I excel in creating engaging
-          user experiences and extracting valuable insights from vast amounts of data. My goal is to leverage technology to make a
-          positive impact on people's lives.
+          <b>Hi, I’m Lavanya</b> (Official name: Amisha Patel) <br />
+          I’m a fresher with a strong interest in full-stack development using
+          the MERN stack (MongoDB, Express, React, Node.js). I enjoy learning
+          how complete systems work—from designing responsive user interfaces to
+          building efficient backend logic.
         </p>
+
         <p className="text-base mb-8">
-          In addition, I am committed to becoming a successful expert in the field of information technology. I aim to channelize
-          my technical knowledge and skills to ensure both personal and professional growth. By continuously learning and adapting
-          to new technologies, I strive to contribute to the prosperity of the organization I work for, while making meaningful
-          contributions to the IT industry as a whole.
+          I have a solid foundation in C++ programming and am actively expanding
+          my skills in Java and Python to strengthen my problem-solving and
+          backend development capabilities. I’m highly motivated, quick to
+          learn, and eager to work on real-world projects that help me grow as a
+          software engineer.
         </p>
       </div>
 
+      {/* EXPERIENCE */}
       <div>
-        <h2 className="text-3xl font-bold mb-6 border-b-4 border-blue-500 inline-block">
-        What I have Done!
+        <h2 className="text-3xl font-bold mb-8 border-b-4 border-blue-500 inline-block">
+          Experience
         </h2>
 
-        <div className="grid md:grid-cols-2 gap-6">
-          <div className="bg-green-300 flex gap-4 p-4 rounded-lg" >
-            <img src="./icons/front-end-developer.png" alt="Front-end Developer" className="w-16 h-16" />
-            <div>
-              <h4 className="text-lg font-bold mb-1">Front-end Developer</h4>
-              <p className="text-sm">
-                As a front-end Developer, I have done an internship at Murphtech Software Solution Company. This helped me face real
-                problems and improve my skills like HTML and CSS.
-              </p>
+        <div className="space-y-10">
+          <div className="flex items-start justify-between gap-6">
+            <div className="flex gap-4">
+              <img
+                src="./icons/company_logo.jpg"
+                alt="Murphtech"
+                className="w-12 h-12 rounded-full"
+              />
+
+              <div>
+                <h3 className="text-lg font-semibold">
+                  Murphtech Software Solutions
+                </h3>
+                <p className="text-sm text-black mb-2">
+                  Front-end Developer Intern
+                </p>
+                <p className="text-sm text-black max-w-xl">
+                  Built responsive user interfaces using HTML and CSS, worked on
+                  real-world projects, and gained professional development
+                  experience.
+                </p>
+              </div>
             </div>
+
+            <span className="text-sm text-black whitespace-nowrap">
+              2023 – 2024
+            </span>
           </div>
 
-          <div className="bg-pink-300 flex gap-4 p-4 rounded-lg" >
-            <img src="./icons/analyst.png" alt="Data Analyst" className="w-16 h-16" />
-            <div>
-              <h4 className="text-lg font-bold mb-1">Data Analyst</h4>
-              <p className="text-sm">
-                As a fresher, I don't have direct experience in the Data Analyst field, but I have basic knowledge and skills used
-                in this field like Python and SQL.
-              </p>
-            </div>
-          </div>
+          <div className="flex items-start justify-between gap-6">
+            <div className="flex gap-4">
+              <img
+                src="./icons/cyber_club.jpg"
+                alt="Cyber Club"
+                className="w-12 h-12 rounded-full"
+              />
 
-          <div className="bg-purple-300 flex gap-4 p-4 rounded-lg" >
-            <img src="./icons/ruler.png" alt="Graphic Designer" className="w-16 h-16" />
-            <div>
-              <h4 className="text-lg font-bold mb-1">Graphic Designer</h4>
-              <p className="text-sm">
-                In the field of Graphic Design, I did an internship at Shas Foundation during COVID-19, which helped me improve my
-                skills in design.
-              </p>
+              <div>
+                <h3 className="text-lg font-semibold">
+                  Cyber Club – Department of Computer Applications
+                </h3>
+                <p className="text-sm text-black mb-2">Secretary (BCA)</p>
+                <p className="text-sm text-black max-w-xl">
+                  Led and organized technical events, improving communication,
+                  leadership, and team management skills.
+                </p>
+              </div>
             </div>
-          </div>
 
-          <div className="bg-yellow-300 flex gap-4 p-4 rounded-lg">
-            <img src="./icons/globalization.png" alt="Digital Marketing" className="w-16 h-16" />
-            <div>
-              <h4 className="text-lg font-bold mb-1">Digital Marketing</h4>
-              <p className="text-sm">
-                I have done Digital Marketing during the COVID-19 pandemic.
-              </p>
-            </div>
+            <span className="text-sm text-black whitespace-nowrap">
+              2021 – 2024
+            </span>
           </div>
         </div>
       </div>
