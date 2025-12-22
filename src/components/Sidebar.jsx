@@ -27,7 +27,6 @@ export default function Sidebar() {
 
       <a
         href="/downloads/Amisha_Patel_Resume.pdf"
-        download
         target="_blank"
         rel="noopener noreferrer"
         className="mt-6 bg-gradient-to-r from-blue-500 to-purple-500 text-white px-6 py-2 rounded-full flex items-center gap-2 hover:shadow-lg"
