@@ -39,9 +39,10 @@ export default function Contact() {
 
   return (
     <form onSubmit={handleSubmit} className="flex flex-col gap-4">
-      <h2 className="text-3xl font-bold mb-6 border-b-4 border-blue-500 inline-block">
+      <h2 className="text-3xl font-bold mb-6 border-b-4 border-blue-500 inline-block w-fit pb-1">
         Contact
       </h2>
+
 
       <div>
         <label className="block text-sm mb-1" required>Name *</label>
@@ -50,7 +51,7 @@ export default function Contact() {
           value={form.name}
           onChange={handleChange}
           required
-          className="w-full border-b border-gray-400 py-1 text-sm text-black p-1"
+          className="w-full border-b py-1 text-sm text-black p-1 bg-inherit"
         />
       </div>
 
@@ -62,7 +63,7 @@ export default function Contact() {
           value={form.email}
           onChange={handleChange}
           required
-          className="w-full border-b border-gray-400 py-1 text-sm text-black p-1"
+          className="w-full border-b py-1 text-sm text-black p-1 bg-inherit"
         />
       </div>
 
@@ -74,7 +75,7 @@ export default function Contact() {
           value={form.message}
           onChange={handleChange}
           required
-          className="w-full border-b border-gray-400 py-1 text-sm text-black p-1"
+          className="w-full border-b py-1 text-sm text-black p-1 bg-inherit"
         ></textarea>
       </div>
 
