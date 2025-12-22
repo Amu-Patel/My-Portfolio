@@ -8,52 +8,25 @@ import Contact from "./components/Contact";
 
 export default function App() {
   const [active, setActive] = useState("about");
-  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   return (
     <div className="min-h-screen flex flex-col md:flex-row bg-black p-4 md:p-6">
 
-      
-      <aside className="hidden md:block w-fit">
+      {/* ================= SIDEBAR ================= */}
+      {/* Mobile: always visible at top/left */}
+      <aside className="w-full md:w-fit mb-4 md:mb-0">
         <Sidebar />
       </aside>
 
-      
-      {!isSidebarOpen && (
-        <div className="md:hidden fixed top-4 left-4 z-50">
-          <button
-            onClick={() => setIsSidebarOpen(true)}
-            className="p-1.5 bg-white/80 backdrop-blur-md rounded-full shadow"
-          >
-            <i className="bx bx-menu text-xl"></i> 
-          </button>
-        </div>
-      )}
+      {/* ================= MAIN CONTENT ================= */}
+      <div className="flex-1 flex flex-col relative pb-20 md:pb-0">
 
-      
-      {isSidebarOpen && (
-        <div
-          className="fixed inset-0 bg-black/30 z-40"
-          onClick={() => setIsSidebarOpen(false)} 
-        >
-          <aside
-            className="fixed left-0 top-0 h-full w-64 bg-white/90 backdrop-blur-md shadow-lg z-50 p-4"
-            onClick={(e) => e.stopPropagation()} 
-          >
-            <Sidebar />
-          </aside>
-        </div>
-      )}
-
-      
-      <div className="flex-1 flex flex-col relative pt-16 pb-16 md:pt-0 md:pb-0">
-
-        
+        {/* ================= DESKTOP TOP TABS ================= */}
         <div className="hidden md:block w-full mb-4">
           <Tabs active={active} setActive={setActive} />
         </div>
 
-        
+        {/* ================= PAGE CONTENT ================= */}
         <main className="flex-1 bg-white/30 backdrop-blur-[30px] text-black font-poppins rounded-xl border border-white/20 shadow p-4 sm:p-6 w-full max-w-4xl md:mt-6 overflow-y-auto no-scrollbar mx-auto">
           {active === "about" && <About />}
           {active === "resume" && <Resume />}
@@ -61,11 +34,8 @@ export default function App() {
           {active === "contact" && <Contact />}
         </main>
 
-        
-        <div className="md:hidden h-16" />
-
-        
-        <div className="w-full md:hidden fixed bottom-0 left-0 z-50 h-16 bg-white/90 backdrop-blur-md shadow-lg border-t border-gray-200">
+        {/* ================= MOBILE BOTTOM TAB BAR ================= */}
+        <div className="md:hidden fixed bottom-0 left-0 w-full z-50">
           <Tabs active={active} setActive={setActive} />
         </div>
       </div>
