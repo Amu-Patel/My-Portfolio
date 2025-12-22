@@ -1,16 +1,17 @@
 {
-  "homepage": "https://amu-patel.github.io/Portfolio_Amisha_Patel",
+  "homepage": "https://amu-patel.github.io/My-Portfolio",
   "name": "portfolio",
   "private": true,
   "version": "0.0.0",
   "type": "module",
- "scripts": {
-  "dev": "vite",
-  "build": "vite build",
-  "preview": "vite preview",
-  "lint": "eslint .",
-  "deploy": "gh-pages -d dist"
-},
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "predeploy":"npm run build",
+    "lint": "eslint .",
+    "deploy": "gh-pages -d dist"
+  },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
     "react": "^19.1.0",
