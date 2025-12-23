@@ -1,12 +1,53 @@
-# React + Vite
+# Amisha Patel | Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my portfolio repository! This website showcases my skills, projects, achievements, and contact information. I am a passionate software engineer specializing in **Full Stack Development**, particularly with the **MERN stack**, and have experience in programming languages like **C++, Java, and Python**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🌐 Live Website
 
-## Expanding the ESLint configuration
+[Visit My Portfolio](https://amu-patel.github.io/My-Portfolio/)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 👩‍💻 About Me
+
+Hi, I'm **Amisha Patel (Lavanya)** — a fresher with a strong interest in web development and software engineering. I enjoy building interactive and responsive web applications, enhancing user experiences, and solving challenging problems.
+
+- Full Stack Web Development (MERN)
+- Programming in C++, Java, Python
+- Strong problem-solving skills
+- Passionate about building projects that matter
+
+---
+
+---
+
+## 🛠️ Technologies Used
+
+- **Frontend:** React.js, Tailwind CSS, HTML5, JavaScript  
+- **Backend:** Node.js (for future extensions / MERN stack)  
+- **Tools:** Vite, Git, GitHub Pages  
+- **Other Skills:** C++, Java, Python, Data Visualization
+
+---
+
+## 📌 Features of Portfolio
+
+- Responsive design for mobile and desktop
+- Sidebar with profile and contact information
+- Bottom navigation tabs for mobile
+- Resume download in PDF format
+- Live sections for About, Resume, Projects, and Contact
+- Integrated contact form connected to Google Forms
+- Dark / Light mode toggle
+
+---
+
+## 🚀 How to Run Locally
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/Amu-Patel/My-Portfolio.git
+
