@@ -5,18 +5,18 @@ export default function Works() {
 
   const projects = [
     {
-      img: "./works/1.png",
+      img: "./works/12.png",
       title: "Mern Auth",
       category: "Web",
-      desc: "A responsive UI clone of authentication focusing on layout structure, spacing, and component-based design.",
-      tech: ["HTML", "CSS", "JavaScript","reactjs","vite","nodejs","express.js","mongoDb","nodemailer"],
+      desc: "A responsive authentication system with component-based architecture and secure backend integration.",
+      tech: ["HTML", "CSS", "JavaScript", "React", "Vite", "Node.js", "Express", "MongoDB", "Nodemailer"],
       link: "https://github.com/Amu-Patel/complete-mini-Mern-Auth-project",
     },
     {
       img: "./works/1.png",
       title: "Hotstar Clone",
       category: "Web",
-      desc: "A responsive UI clone of Hotstar focusing on layout structure, spacing, and component-based design.",
+      desc: "A responsive UI clone of Hotstar focusing on layout structure and visual consistency.",
       tech: ["HTML", "CSS", "JavaScript"],
       link: "https://amu-patel.github.io/Hotstar-Clone/",
     },
@@ -24,7 +24,7 @@ export default function Works() {
       img: "./works/2.png",
       title: "Hero Landing Page",
       category: "Web",
-      desc: "A modern hero section design emphasizing typography, alignment, and visual balance.",
+      desc: "A modern hero landing page emphasizing typography and clean layout.",
       tech: ["HTML", "CSS"],
       link: "https://amu-patel.github.io/Portfolio-website-interface/",
     },
@@ -32,7 +32,7 @@ export default function Works() {
       img: "./works/9.png",
       title: "Flyer – SHAS Foundation",
       category: "Graphic",
-      desc: "Designed an event flyer for an NGO, focusing on information hierarchy and visual clarity.",
+      desc: "Designed a professional NGO flyer with strong visual hierarchy.",
       tech: ["Canva", "Design"],
       link: "https://www.canva.com/design/DAE22fd72fM/HopsK9-UoYYrSvhP5uMdOQ/edit",
     },
@@ -44,22 +44,25 @@ export default function Works() {
       : projects.filter((p) => p.category === filter);
 
   return (
-    <section id="works" className="py-24 px-4">
+    <section
+      id="works"
+      className="py-20 px-4 sm:px-6 lg:px-8"
+    >
       <div className="max-w-6xl mx-auto">
         {/* Heading */}
-        <h2 className="text-3xl font-bold border-b-4 border-blue-500 inline-block mb-4">
+        <h2 className="text-3xl sm:text-4xl font-bold border-b-4 border-blue-500 inline-block mb-6">
           Work
         </h2>
 
         {/* Filter */}
-        <div className="flex gap-8 mb-20 text-sm">
+        <div className="flex flex-wrap gap-6 mb-16 text-sm">
           {["All", "Web", "Graphic"].map((cat) => (
             <button
               key={cat}
               onClick={() => setFilter(cat)}
-              className={`${
+              className={`transition ${
                 filter === cat
-                  ? "text-black font-semibold"
+                  ? "text-black font-semibold border-b-2 border-black"
                   : "text-gray-500 hover:text-black"
               }`}
             >
@@ -73,34 +76,36 @@ export default function Works() {
           {visible.map((p, i) => (
             <div
               key={i}
-              className="flex flex-col md:flex-row gap-12 items-start"
+              className="flex flex-col lg:flex-row gap-10 lg:gap-14 items-center lg:items-start"
             >
               {/* Image */}
-              <img
-                src={p.img}
-                alt={p.title}
-                className="md:w-1/2 rounded-xl border"
-              />
+              <div className="w-full lg:w-1/2">
+                <img
+                  src={p.img}
+                  alt={p.title}
+                  className="w-full h-auto rounded-xl border object-cover"
+                />
+              </div>
 
               {/* Content */}
-              <div className="max-w-xl">
-                <p className="text-sm text-gray-500 mb-2">
+              <div className="w-full lg:w-1/2 text-center lg:text-left">
+                <p className="text-sm text-gray-400 mb-2">
                   {p.category}
                 </p>
 
-                <h3 className="text-2xl font-semibold mb-4">
+                <h3 className="text-2xl sm:text-3xl font-semibold mb-4">
                   {p.title}
                 </h3>
 
-                <p className="text-white mb-6 leading-relaxed">
+                <p className="text-gray-300 mb-6 leading-relaxed">
                   {p.desc}
                 </p>
 
-                <div className="flex flex-wrap gap-2 mb-6">
+                <div className="flex flex-wrap gap-2 justify-center lg:justify-start mb-6">
                   {p.tech.map((t) => (
                     <span
                       key={t}
-                      className="text-xs px-3 py-1 border rounded-full text-black"
+                      className="text-xs px-3 py-1 border rounded-full text-gray-200"
                     >
                       {t}
                     </span>
@@ -111,7 +116,7 @@ export default function Works() {
                   href={p.link}
                   target="_blank"
                   rel="noreferrer"
-                  className="text-blue-600 font-medium hover:underline"
+                  className="inline-block text-blue-500 font-medium hover:underline"
                 >
                   View Project →
                 </a>
